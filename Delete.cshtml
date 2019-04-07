@@ -1,4 +1,4 @@
-﻿@model RecursosHumanos_.Models.Cargo
+﻿@model RecursosHumanos_.Models.Departamento
 
 @{
     ViewBag.Title = "Delete";
@@ -6,15 +6,31 @@
 }
 <h3>Seguro que quieres eliminar esto?</h3>
 <div>
-    <h4>Cargo</h4>
+    <h4>Departamento</h4>
     <hr />
     <dl class="dl-horizontal">
         <dt>
-            @Html.DisplayNameFor(model => model.Cargo1)
+            @Html.DisplayNameFor(model => model.Codigo)
         </dt>
 
         <dd>
-            @Html.DisplayFor(model => model.Cargo1)
+            @Html.DisplayFor(model => model.Codigo)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Departamento1)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Departamento1)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Nombre)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Nombre)
         </dd>
 
     </dl>
@@ -24,7 +40,7 @@
 
         <div class="form-actions no-color">
             <input type="submit" value="Delete" class="btn btn-default" /> |
-            @Html.ActionLink("Volver a los cargos", "Index")
+            @Html.ActionLink("Volver a la lista", "Index")
         </div>
     }
 </div>

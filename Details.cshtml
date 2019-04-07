@@ -1,24 +1,40 @@
-﻿@model RecursosHumanos_.Models.Cargo
+﻿@model RecursosHumanos_.Models.Departamento
 
 @{
     ViewBag.Title = "Details";
     Layout = "~/Views/_Layout.cshtml";
 }
 <div>
-    <h4>Cargo</h4>
+    <h4>Departamento</h4>
     <hr />
     <dl class="dl-horizontal">
         <dt>
-            @Html.DisplayNameFor(model => model.Cargo1)
+            @Html.DisplayNameFor(model => model.Codigo)
         </dt>
 
         <dd>
-            @Html.DisplayFor(model => model.Cargo1)
+            @Html.DisplayFor(model => model.Codigo)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Departamento1)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Departamento1)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Nombre)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Nombre)
         </dd>
 
     </dl>
 </div>
 <p>
     @Html.ActionLink("Editar", "Edit", new { id = Model.id }) |
-    @Html.ActionLink("Volver a los cargos", "Index")
+    @Html.ActionLink("Volver a los departamentos", "Index")
 </p>
